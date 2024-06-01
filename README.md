@@ -12,6 +12,24 @@ The following libraries and dependencies were used to split the data, create the
 ### Overview
 The purpose of this Credit Risk Analysis Report is to evaluate the reliability of the Logistic Regression model that was created and trained on the provided dataset. Evaluating the performance of the created model is essential for determining whether the lending company can reliably use the model for classifying loans which can save them time and money, or if they would be at a high risk of incorrect classifications leading to loss of business and funds, and potentially, bankrupcy. 
 
+The financial information used for this analysis included:
+- loan_size
+- interest_rate
+- borrower_income
+- debt_to_income
+- num_of_accounts
+- derogatory_marks
+- total_debt
+- loan_status, which was used for classifying the health vs high-risk loans
+
+To evaluate the model we executed the following steps:
+1) Read the csv file containing the lending data and stored it as a dataframe
+2) Created labels (y) and features (X) using the dataframe 
+3) Split the data into training and testing sets using train_test_split
+4) Created a Logistic Regression Model using the training data
+5) Generated the predicted results on the testing data using the model
+6) Evaluated the model's performance using a confusion matrix and classification report
+
 ### Results 
 The logistic regression model:
 - has an weighted accuracy of 99%
